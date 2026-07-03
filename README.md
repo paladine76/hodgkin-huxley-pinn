@@ -108,6 +108,12 @@ point (over 100% relative error — no data ever touches them beyond the
 initial condition), and Phase A alone, using only the ODE residual, brings all
 three under 6%.
 
+![PINN vs. Radau reference, Stage 2 final result](assets/stage2_final_result.png)
+
+*Final Phase B result, voltage-only supervision. `V` is fit to sparse noisy
+data (dashed vs. solid); `m`, `h`, and `n` are reconstructed entirely by the
+physics residual, with no data of any kind after `t=0`.*
+
 ## Repository structure
 
 ```
@@ -120,6 +126,8 @@ hodgkin-huxley-pinn/
 │   └── trainer.py      # collocation training loop, loss weighting, optimizer
 ├── notebook/
 │   └── hh_demo.ipynb   # end-to-end walkthrough: data generation through Phase B
+├── assets/
+│   └── stage2_final_result.png   # final result plot, referenced above
 ├── requirements.txt
 ├── .gitignore
 └── .gitattributes
