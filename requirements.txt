@@ -1,0 +1,13 @@
+# Core JAX ecosystem -- no TensorFlow/Keras or PyTorch used anywhere in this project
+jax>=0.4.20
+jaxlib>=0.4.20
+optax>=0.1.7
+
+# Reference solver (Radau) and array utilities
+numpy>=1.24
+scipy>=1.11
+
+# Notebook + plotting
+matplotlib>=3.7
+jupyter>=1.0
+ipykernel>=6.25
