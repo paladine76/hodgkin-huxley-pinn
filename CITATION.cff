@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "Hodgkin-Huxley PINN: Reconstructing Latent Neuron Dynamics from Voltage-Only Data"
+abstract: >-
+  A JAX-based physics-informed neural network (PINN) that reconstructs full
+  Hodgkin-Huxley neuron dynamics (membrane voltage V and gating variables m, h, n)
+  from sparse, noisy voltage-only observations -- inferring the ion-channel gating
+  states that patch-clamp electrophysiology cannot directly measure. Resolves the
+  "flat-attractor" failure mode, in which physics-only training collapses to a
+  smooth non-spiking equilibrium, via a staged hybrid data+physics training
+  curriculum. Achieves under 5% relative L2 error on all four state variables
+  against a numerical (Radau) reference, with the three latent gating variables
+  recovered from physics constraints alone.
+authors:
+  - family-names: Hardiansyah
+    given-names: Irzam
+    affiliation: "Karolinska Institutet"
+repository-code: "https://github.com/paladine76/hodgkin-huxley-pinn"
+url: "https://github.com/paladine76/hodgkin-huxley-pinn"
+keywords:
+  - physics-informed neural networks
+  - Hodgkin-Huxley model
+  - computational neuroscience
+  - latent state inference
+  - JAX
+  - scientific machine learning
+license: MIT 
+version: 1.0.0 
+date-released: "2026-07-03" 
